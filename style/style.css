@@ -1,10 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 html{
     scroll-behavior: smooth;
 }
 
 .pacifico-regular {
     font-family: "Pacifico";
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
   }
 
@@ -19,24 +24,24 @@ h1 {
     font-family: "Pacifico";
     text-transform: capitalize;
     font-size: 40px;
+    font-weight: 100;
     padding-bottom: 40px;
     display: inline-block;
-    background: linear-gradient(to left, #7899D4,#700548, #E60461, #FFA54C);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
 }
 
 h2 {
     font-family: "Pacifico";
     text-transform: capitalize;
     font-size: 32px;
+    font-weight: 100;
 }
 
 h3 {
     font-family: "Pacifico";
     text-transform: capitalize;
     font-size: 24px;
+    font-weight: 100;
     letter-spacing: 1px;
     padding-bottom: 10px;
 }
@@ -52,10 +57,14 @@ a{
     text-decoration: none;
 }
 
+ul{
+    list-style: none;
+}
+
 li {
     font-family: "Josefin Sans";
     font-size: 16px;
-    padding-bottom: 10px;
+    line-height: 30px;  
 }
 
 /*******************Les variables ****************/
@@ -64,12 +73,18 @@ li {
     --primary-color: #700548;
     --secondary-color: #000000;
     --tertiary-color: #FFFFFF;
+    --quad-color: #7899D4;
     --heading-font: "Pacifico";
     --body-font: "Josefin Sans";
     --font-size-base: 16px;
 }
 
 /*******************La mise en page ****************/
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .container{
     width: 80%;
     max-width: 1200px;
@@ -79,23 +94,25 @@ li {
 /*******************Le header ****************/
 header{
     width: 100%;
-    height: 70px;
+    height: 75px;
+    padding: 0 5%;
     background-color: var(--primary-color);
     position: fixed;
     top: 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: var(--tertiary-color);
 }
 
-header #contact{
+#contact{
+    border: #FFFFFF 1px solid;
     display: flex;
     align-items: center;
     margin: 0 10%;
 }
 
-header div a{
+#contact a{
     font-family: var(--body-font);
     font-size: 20px;
     color: #FFFFFF;
@@ -116,7 +133,6 @@ header .icone img{
 
 .navbar {
     position: fixed;
-    top: 75px;
     left: 0;
 }
 
@@ -132,7 +148,7 @@ header .icone img{
 
 .nav-menu {
     position: fixed;
-    top: 70px;
+    top: 75px;
     left: -250px;
     width: 200px;
     height: 100vh;
@@ -177,7 +193,7 @@ header .icone img{
 
 main {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 75px 0;
 }
 /******************Le footer****************/
