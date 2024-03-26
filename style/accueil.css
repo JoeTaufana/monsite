@@ -1,0 +1,67 @@
+main{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/backgroundAccueil.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    padding: 40px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section #accroche {
+    max-width: 600px;
+    height: 35%;
+    padding: 40px;
+    margin: 10%;
+    background: rgba(255, 255, 255, 0.40);
+    border: 10px solid var(--tertiary-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    }
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0); /* Position de départ */
+    }
+    25% {
+        transform: translateY(10px); /* Position de départ */
+    }
+    50% {
+        transform: translateX(-10px); /* Flottement vers le haut */
+    }
+    75% {
+        transform: translateX(10px); /* Position de départ */
+    }
+    100% {
+        transform: translateY(-10px); /* Retour à la position de départ */
+    }
+}
+
+h1 {
+    animation: floatAnimation 10s infinite; /* Animation continue de 2 secondes */
+}
+
+/* #photoProfil {
+    width: 25%; 
+    height: 15%; 
+    margin-top: 10%;
+    margin-right: -70%;
+    border: 10px solid var(--tertiary-color);
+}
+
+#photoProfil img {
+    width: 100%;
+    height: 100%;
+} */

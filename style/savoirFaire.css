@@ -1,0 +1,20 @@
+
+
+section{
+    width: 80%;
+    padding: 5% 0;
+}
+
+.container div{
+    min-width: 600px;
+}
+#accordion {
+}
+
+.group {
+
+}
+
+.group li {
+    font-family: var(--body-font);
+}

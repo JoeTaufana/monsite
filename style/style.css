@@ -1,0 +1,198 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico";
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+h1 {
+    font-family: "Pacifico";
+    text-transform: capitalize;
+    font-size: 40px;
+    padding-bottom: 40px;
+    display: inline-block;
+    background: linear-gradient(to left, #7899D4,#700548, #E60461, #FFA54C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-family: "Pacifico";
+    text-transform: capitalize;
+    font-size: 32px;
+}
+
+h3 {
+    font-family: "Pacifico";
+    text-transform: capitalize;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-family: "Josefin Sans";
+    text-transform: capitalize;
+    font-size: 16px;
+    padding-bottom: 10px;    
+}
+
+a{
+    text-decoration: none;
+}
+
+li {
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+/*******************Les variables ****************/
+
+:root {
+    --primary-color: #700548;
+    --secondary-color: #000000;
+    --tertiary-color: #FFFFFF;
+    --heading-font: "Pacifico";
+    --body-font: "Josefin Sans";
+    --font-size-base: 16px;
+}
+
+/*******************La mise en page ****************/
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*******************Le header ****************/
+header{
+    width: 100%;
+    height: 70px;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--tertiary-color);
+}
+
+header #contact{
+    display: flex;
+    align-items: center;
+    margin: 0 10%;
+}
+
+header div a{
+    font-family: var(--body-font);
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+header .icone{
+    width: 36px;
+    height: 36px;
+    margin-left: 15px;
+}
+
+header .icone img{
+    width: 100%;
+    height: 100%;
+}
+
+/*******************Le menu ****************/
+
+.navbar {
+    position: fixed;
+    top: 75px;
+    left: 0;
+}
+
+#menu {
+    cursor: pointer;
+    position: fixed !important;
+    top: 50%;
+    left: 0;
+    rotate: 90deg;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.nav-menu {
+    position: fixed;
+    top: 70px;
+    left: -250px;
+    width: 200px;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 30px;
+    position: absolute;
+    top: 35%;
+}
+
+.nav-menu ul li {
+    margin-bottom: 15px;
+}
+
+.nav-menu ul li a {
+    font-family: var(--body-font);
+    font-size: 20px;
+    color: var(--tertiary-color);
+    text-decoration: none;
+    display: block;
+}
+
+.nav-menu ul li a:hover {
+    font-family: var(--body-font);
+    font-size: 25px;
+    display: inline-block;
+    background: linear-gradient(to left, #7899D4,#700548, #E60461, #FFA54C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-menu.active {
+    transform: translateX(250px);
+}
+/******************Le main content*****************/
+
+main {
+    width: 100%;
+    height: 100vh;
+    padding: 75px 0;
+}
+/******************Le footer****************/
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    font-family: var(--body-font);
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: var(--tertiary-color);
+}
