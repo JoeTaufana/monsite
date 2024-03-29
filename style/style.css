@@ -26,8 +26,7 @@ h1 {
     font-size: 40px;
     font-weight: 100;
     padding-bottom: 40px;
-    display: inline-block;
-    
+    color: var(--tertiary-color);
 }
 
 h2 {
@@ -48,7 +47,6 @@ h3 {
 
 p {
     font-family: "Josefin Sans";
-    text-transform: capitalize;
     font-size: 16px;
     padding-bottom: 10px;    
 }
@@ -74,21 +72,51 @@ li {
     --secondary-color: #000000;
     --tertiary-color: #FFFFFF;
     --quad-color: #7899D4;
+    
     --heading-font: "Pacifico";
     --body-font: "Josefin Sans";
     --font-size-base: 16px;
 }
+/*******************Les boutons********************/
 
+.btn {
+    font-family: "Josefin Sans";
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 25px;
+    /* border: 1px solid var(--tertiary-color); */
+    border-radius: 35px 1px 35px 1px;
+    box-shadow: #000000 4px 4px 10px ;
+    cursor: pointer;
+    color: var(--tertiary-color);
+    background: var(--primary-color);
+    margin: 20px auto;
+}
 /*******************La mise en page ****************/
 body {
     display: flex;
     flex-direction: column;
 }
 
+main{
+    width: 100%;
+    background: url(../images/backgroundAccueil.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .container{
+    border: yellow solid;
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    height: 100vh;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*******************Le header ****************/
@@ -106,7 +134,6 @@ header{
 }
 
 #contact{
-    border: #FFFFFF 1px solid;
     display: flex;
     align-items: center;
     margin: 0 10%;
@@ -132,18 +159,28 @@ header .icone img{
 /*******************Le menu ****************/
 
 .navbar {
+    border: #7899D4 1px solid;
+    width: 45px;
+    height: 100%;
     position: fixed;
     left: 0;
+    
 }
 
 #menu {
+    border: red solid 1px;
+    ;
+    
     cursor: pointer;
     position: fixed !important;
     top: 50%;
     left: 0;
-    rotate: 90deg;
     font-weight: bold;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+#menu p{
+    padding: 15px
 }
 
 .nav-menu {

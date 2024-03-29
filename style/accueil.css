@@ -1,22 +1,8 @@
-main{
-    width: 100%;
-    background: url(../images/backgroundAccueil.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-section {
-    width: 100%;
-    padding: 50px 0px;
-}
-
 section #accroche {
     max-width: 600px;
     height: 35%;
     padding: 40px;
-    margin: 10% auto;
+    margin: 15% auto;
     background: rgba(255, 255, 255, 0.50);
     border: 10px solid var(--tertiary-color);
     text-align: center;
